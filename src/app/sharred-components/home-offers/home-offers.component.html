@@ -3,58 +3,152 @@
         <h3>SELECT YOUR PRICING</h3>
     </div>
     <div class="row ">
-        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
           <div class="card h-100">
-            <img src="./assets/imgs/design-1.jpg" class="card-img-top" alt="...">
-            <div class="card-body d-none d-lg-block">
+            <div class="card-top">
+              <img src="./assets/imgs/design-1.jpg" class="card-img-top" alt="...">
+            <div class="overCard" *ngIf="miniClass">
+              <p class="text-warning top-right">525,000 EGP</p>
+              
+              <button class="centered btn  btn-lg bg-dark text-light btn-outline-light" >Select</button>
+              <h2 class="bottom-centered">EXCLUSIVE</h2>
+              <p class="bottom-right text-warning" *ngIf="!more" (click)="showMore()"><i class="fa-solid fa-angles-down"  ></i> More Info</p>
+              <p class="bottom-right text-warning" *ngIf="more" (click)="showMore()"><i class="fa-solid fa-angles-up"  ></i> Less Info</p>
+          </div>
+            </div>
+            <div class="card-body" *ngIf="!(!more && miniClass)">
               <div >
                 <h2 class="card-title text-center text-warning">525,000 EGP</h2>
               <h2 class="card-title text-center">EXCLUSIVE</h2>
               </div>
-              <div>
-
+              <div class="description">
+                <b class="d-block">Flooring</b>
+                <div  class="floor">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Bedroom : Drak Brown Hdf</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                </div>
+                <b class="d-block">Wall</b>
+                <div  class="wall">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                </div>
+                <b class="d-block">Ceiling</b>
+                <div  class="ceil">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>                </div>
+                <b class="d-block">Add-Ons</b>
+                <div  class="add">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                </div>
+                
               </div>
+              <div class="text-center deliver"><b>90 Days To Deliver</b></div>
               <div class="text-center">
                 <button type="button" class="btn  btn-lg bg-light text-dark btn-outline-warning">Choose Plan</button>
               </div>
             </div>
-          </div>
         </div>
-        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
-          <div class="card h-100">
-            <img src="./assets/imgs/design-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <div>
-                <h2 class="card-title text-center text-warning">640,000 EGP</h2>
-                <h2 class="card-title text-center">PREMIUM</h2>
-            </div>
-            <div>
-<b>abdo</b><br>
-<i class="fa fa-check text-warning" aria-hidden="true"></i><span>asd</span>
-
-            </div>
-            <div class="text-center">
-              <button type="button" class="btn  btn-lg bg-light text-dark btn-outline-warning">Choose Plan</button>
-            </div>
-            </div>
-          </div>
         </div>
-        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
-          <div class="card h-100">
-            <img src="./assets/imgs/design-3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <div>
-                <h2 class="card-title text-center text-warning">680,000 EGP</h2>
-                <h2 class="card-title text-center">LUXURY</h2>
-            </div>
-            <div>
 
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="card h-100">
+            <div class="card-top">
+              <img src="./assets/imgs/design-2.jpg" class="card-img-top" alt="...">
+            <div class="overCard" *ngIf="miniClass">
+              <p class="text-warning top-right">525,000 EGP</p>
+              
+              <button class="centered btn  btn-lg bg-dark text-light btn-outline-light" >Select</button>
+              <h2 class="bottom-centered">PREMIUM</h2>
+              <p class="bottom-right text-warning" *ngIf="!more" (click)="showMore()"><i class="fa-solid fa-angles-down"  ></i> More Info</p>
+              <p class="bottom-right text-warning" *ngIf="more" (click)="showMore()"><i class="fa-solid fa-angles-up"  ></i> Less Info</p>
+          </div>
             </div>
-            <div class="text-center">
-              <button type="button" class="btn  btn-lg bg-light text-dark btn-outline-warning">Choose Plan</button>
-            </div>
+            <div class="card-body" *ngIf="!(!more && miniClass)">
+              <div >
+                <h2 class="card-title text-center text-warning">525,000 EGP</h2>
+              <h2 class="card-title text-center">PREMIUM</h2>
+              </div>
+              <div class="description">
+                <b class="d-block">Flooring</b>
+                <div  class="floor">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Bedroom : Drak Brown Hdf</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
                 </div>
-          </div>
+                <b class="d-block">Wall</b>
+                <div  class="wall">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                </div>
+                <b class="d-block">Ceiling</b>
+                <div  class="ceil">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>                </div>
+                <b class="d-block">Add-Ons</b>
+                <div  class="add">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                </div>
+                
+              </div>
+              <div class="text-center deliver"><b>90 Days To Deliver</b></div>
+              <div class="text-center">
+                <button type="button" class="btn  btn-lg bg-light text-dark btn-outline-warning">Choose Plan</button>
+              </div>
+            </div>
         </div>
+        </div>
+
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="card h-100">
+            <div class="card-top">
+              <img src="./assets/imgs/design-3.jpg" class="card-img-top" alt="...">
+            <div class="overCard" *ngIf="miniClass">
+              <p class="text-warning top-right">525,000 EGP</p>
+              
+              <button class="centered btn  btn-lg bg-dark text-light btn-outline-light" >Select</button>
+              <h2 class="bottom-centered">LUXURY</h2>
+              <p class="bottom-right text-warning" *ngIf="!more" (click)="showMore()"><i class="fa-solid fa-angles-down"  ></i> More Info</p>
+              <p class="bottom-right text-warning" *ngIf="more" (click)="showMore()"><i class="fa-solid fa-angles-up"  ></i> Less Info</p>
+          </div>
+            </div>
+            <div class="card-body" *ngIf="!(!more && miniClass)">
+              <div >
+                <h2 class="card-title text-center text-warning">525,000 EGP</h2>
+              <h2 class="card-title text-center">LUXURY</h2>
+              </div>
+              <div class="description">
+                <b class="d-block">Flooring</b>
+                <div  class="floor">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Bedroom : Drak Brown Hdf</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                </div>
+                <b class="d-block">Wall</b>
+                <div  class="wall">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                </div>
+                <b class="d-block">Ceiling</b>
+                <div  class="ceil">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>                </div>
+                <b class="d-block">Add-Ons</b>
+                <div  class="add">
+                <span class="d-block"><i class="fa fa-check text-warning" aria-hidden="true"></i><span> Reciption:Graysh pocielen</span></span>
+                </div>
+                
+              </div>
+              <div class="text-center deliver"><b>90 Days To Deliver</b></div>
+              <div class="text-center">
+                <button type="button" class="btn  btn-lg bg-light text-dark btn-outline-warning">Choose Plan</button>
+              </div>
+            </div>
+        </div>
+        </div>
+        
       </div>
   </div>

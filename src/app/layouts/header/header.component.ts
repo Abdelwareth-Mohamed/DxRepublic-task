@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  miniClass:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
+    this.onResize();
+  }
+  @HostListener('window:resize', ['$event'])
+onResize()  {
+    if (window.innerWidth < 576) {
+      this.miniClass = true;
+     
+    } else {
+      this.miniClass = false;
+     
+    }
   }
 
 }
+
