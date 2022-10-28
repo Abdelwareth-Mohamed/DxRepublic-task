@@ -30,6 +30,7 @@ import { ReviewsComponent } from './pages/reviews/reviews.component';
 import { OffersComponent } from './pages/offers/offers.component';
 import { HomeOffersComponent } from './sharred-components/home-offers/home-offers.component';
 import { SubTaskComponent } from './sharred-components/sub-task/sub-task.component';
+import { PartnersComponent } from './pages/partners/partners.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SubTaskComponent } from './sharred-components/sub-task/sub-task.compone
     ReviewsComponent,
     OffersComponent,
     HomeOffersComponent,
-    SubTaskComponent
+    SubTaskComponent,
+    PartnersComponent
   ],
   imports: [
     BrowserModule,
