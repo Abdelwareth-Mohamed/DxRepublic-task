@@ -21,12 +21,30 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { ReviewsComponent } from './pages/reviews/reviews.component';
+import { OffersComponent } from './pages/offers/offers.component';
+import { HomeOffersComponent } from './sharred-components/home-offers/home-offers.component';
+import { SubTaskComponent } from './sharred-components/sub-task/sub-task.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    LoginComponent,
+    RegisterComponent,
+    ReviewsComponent,
+    OffersComponent,
+    HomeOffersComponent,
+    SubTaskComponent
   ],
   imports: [
     BrowserModule,

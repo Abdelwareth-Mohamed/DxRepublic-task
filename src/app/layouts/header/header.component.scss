@@ -1,0 +1,25 @@
+.auth
+{position: relative;
+    height:30px ;
+ text-align: end;
+ background-color: black;
+b
+{
+    margin:10px 25px 0px 25px;
+}}
+.centered {
+    position: absolute;
+    top:100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding:15px;
+    img{
+        margin-top:40px;
+    }
+  }
+.banner
+{
+    background-image: url('./../../../assets/imgs/banner.png');
+    background-repeat: no-repeat, repeat;
+    }
