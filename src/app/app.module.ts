@@ -31,7 +31,7 @@ import { OffersComponent } from './pages/offers/offers.component';
 import { HomeOffersComponent } from './sharred-components/home-offers/home-offers.component';
 import { SubTaskComponent } from './sharred-components/sub-task/sub-task.component';
 import { PartnersComponent } from './pages/partners/partners.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +48,7 @@ import { PartnersComponent } from './pages/partners/partners.component';
     SubTaskComponent,
     PartnersComponent
   ],
-  imports: [
+  imports: [ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     MdbAccordionModule,

@@ -1,1 +1,91 @@
-<p>sub-task works!</p>
+<div class="container">
+    <legend>Job Portal</legend>
+    <div class="row">
+      <div class="col col-md-8">
+        <form [formGroup]="jobForm" (ngSubmit)="save()">
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              formControlName="firstName"
+            />
+          </div>
+          <div class="alert alert-danger"
+*ngIf="firstName?.invalid && (firstName?.touched || firstName?.dirty)"
+>
+<div *ngIf="firstName?.errors?.['required']">
+  First Name can't be emtpy
+</div>
+</div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              formControlName="lastName"
+            />
+          </div>
+          <div class="alert alert-danger"
+*ngIf="lastName?.invalid && (lastName?.touched || lastName?.dirty)"
+>
+<div *ngIf="lastName?.errors?.['required']">
+  Last Name can't be emtpy
+</div>
+</div>
+          <div class="mb-3">
+            <label for="gender" class="form-label">Gender <span class="text-danger" >*</span></label>
+            <select
+                  class="form-select"
+                  formControlName="gender"
+                  aria-label="Default select example"
+                  (change)="changeState($event.target)"
+                >
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+          </div>
+          <div class="alert alert-danger"
+*ngIf="gender?.invalid && (gender?.touched || gender?.dirty)"
+>
+<div *ngIf="gender?.errors?.['required']">
+  Gender can't be emtpy
+</div>
+</div>
+          <div class="mb-3">
+            <label for="militry" class="form-label">Militry Status <span class="text-danger" 
+                *ngIf="(militry?.invalid && (militry?.touched || militry?.dirty)) || militry?.errors?.['required']"
+                >*</span></label>
+            <select 
+            class="form-select"
+            formControlName="militry"
+            aria-label="Default select example"
+          >
+            <option value="accomplished">accomplished</option>
+            <option value="free">free</option>
+            <option value="late">late</option>
+          </select>
+          </div>
+         
+            <div class="alert alert-danger"
+*ngIf="militry?.invalid && (militry?.touched || militry?.dirty)"
+>
+<div *ngIf="militry?.errors?.['required']">
+  Militry can't be emtpy
+</div>
+
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="!jobForm.valid">Submit</button>
+        </form>
+      </div>
+       
+    </div>
+  <div class="row2">
+        <div>{{ preview }}</div>
+      
+  </div>
+</div>
+  
+  
