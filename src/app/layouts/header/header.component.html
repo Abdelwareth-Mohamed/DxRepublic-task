@@ -1,12 +1,13 @@
-<header class="auth" *ngIf="!miniClass">
-<b class="text-light" routerLink="login">Login</b>
-<b class="text-light" routerLink="register">Register</b>
-<div class="centered" *ngIf="!miniClass">
+<!-- *ngIf="!miniClass" -->
+<header class="auth" >
+<b class="text-light" routerLink="login">بث مباشر</b>
+<b class="text-light" routerLink="register">تريند</b>
+<!-- <div class="centered" *ngIf="!miniClass">
   <img src="./assets/icons/logo.png" routerLink="home">
-</div>
+</div> -->
 </header>
 <!-- Navbar -->
-<div class="banner">
+<!-- <div class="banner"> -->
     <nav class="navbar navbar-expand-lg border-bottom">
         <!-- Container wrapper -->
         <div class="container-fluid ">
@@ -30,32 +31,35 @@
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" routerLink="home">Home</a>
+                <a class="nav-link active text-white" aria-current="page" routerLink="home">الرئيسية</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" routerLink="about">About</a>
+                <a class="nav-link text-white" routerLink="about">سياسة</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" routerLink="contact">Contact-Us</a>
-              </li>
-              <li class="underLogo" *ngIf="!miniClass" >
-               
+                <a class="nav-link text-white" routerLink="contact">حوادث</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white"routerLink="offers">Offers</a>
+                <a class="nav-link text-white" routerLink="coact">طقس</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" routerLink="reviews">Reviews</a>
+                <a class="nav-link text-white"routerLink="offers">رياضة</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" routerLink="partners">Our-Partners</a>
+                <a class="nav-link text-white" routerLink="reviews">إقتصاد</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" routerLink="login" *ngIf="miniClass">Login</a>
+                <a class="nav-link text-white" routerLink="paners">فن</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" routerLink="register" *ngIf="miniClass">Register</a>
+                <a class="nav-link text-white" routerLink="partners">تحقيقات</a>
               </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-white" routerLink="login" *ngIf="miniClass">بث مباشر</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" routerLink="register" *ngIf="miniClass">تريند</a>
+              </li> -->
             
       
     </ul>
@@ -64,16 +68,16 @@
         </div>
         <!-- Container wrapper -->
       </nav>
-      <div class="centered" *ngIf="miniClass">
+      <!-- <div class="centered" *ngIf="miniClass">
         <img src="./assets/icons/logo.png">
-    </div>
-    <div class="underNav" *ngIf="!miniClass">
+    </div> -->
+    <!-- <div class="underNav" *ngIf="!miniClass">
 <div class="bottom-left">
   <h4 class="text-light">Lorem ipsum, dolor sit amet consectetur.</h4>
   <h1><span class="text-light">The </span><span class="text-warning">Mountain View Hyde Park</span></h1>
 
 </div>
     </div>
-</div>
+</div> -->
   <!-- Navbar -->
  

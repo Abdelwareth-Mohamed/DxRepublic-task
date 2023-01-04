@@ -1,60 +1,72 @@
 .auth
 {
-    height:30px ;
+    position:fixed;
+ width:100%!important;
+ z-index:1000;
+ height:30px ;
  text-align: end;
  background-color: black;
+ padding-top:3px;
 b
 {
-    margin:10px 25px 0px 25px;
+    margin:15px 25px 0px 25px;
 }}
-.centered {
-    position:absolute;
-    top:5vh;
-    @media (min-width:576px){
-    left: 46%;
-    }
-    @media (max-width:576px){
-        left:50%;
-    }
-    transform: translate(-50%, -50%);
-    background-color: black;
-    padding:15px;
-    border-radius: 7px;
-    z-index:200;
-  }
-.banner
-{position: relative;
-    @media (min-width:576px){
-    background-image: url('./../../../assets/imgs/banner.png');
-    background-repeat: no-repeat, repeat;
-    }
-    @media (max-width:576px){
-    background-color: black;
+// .centered {
+//     position:absolute;
+//     top:5vh;
+//     @media (min-width:576px){
+//     left: 46%;
+//     }
+//     @media (max-width:576px){
+//         left:50%;
+//     }
+//     transform: translate(-50%, -50%);
+//     background-color: black;
+//     padding:15px;
+//     border-radius: 7px;
+//     z-index:200;
+//   }
+// .banner
+// {position: relative;
+//     @media (min-width:576px){
+//     // background-image: url('./../../../assets/imgs/banner.png');
+//     background-repeat: no-repeat, repeat;
+//     }
+//     @media (max-width:576px){
+//     background-color: black;
     
-    }}
+//     }}
     
     ul{
         margin-left:auto;
 
     }
-    li{margin:0px 20px 0px 20px;
+    li{margin:0px 30px 0px 30px;
     font-weight: bolder;
 font-size: larger;
 }
-.underLogo
+// .underLogo
+// {
+//     width:150px;
+// }
+// .underNav
+// {
+//     height:200px ;
+//     position: relative;
+// }
+// .bottom-left {
+//     position: absolute;
+//     bottom: 50px;
+//     left: 16px;
+//     font-family: "Astral";
+//   }
+  .navbar
 {
-    width:150px;
+ background-color:rgb(153, 0, 0); 
+ justify-content:space-between;
+ position:fixed;
+ width:100%!important;
+ z-index:1000;
+ margin-top:30px;
 }
-.underNav
-{
-    height:200px ;
-    position: relative;
-}
-.bottom-left {
-    position: absolute;
-    bottom: 50px;
-    left: 16px;
-    font-family: "Astral";
-  }
-  
   
